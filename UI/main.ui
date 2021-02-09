@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>804</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Site and Horizon</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>801</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>80</number>
+     </property>
+     <property name="rightMargin">
+      <number>80</number>
+     </property>
+     <property name="spacing">
+      <number>100</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="Site_PB">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>SITE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="Horizon_PB">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>HORIZON</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="Check_PB">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>240</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reload</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Export_To_Docx_PB">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>280</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Export to Docx</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Table_PB">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>340</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Table</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>804</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="Action_Site"/>
+    <addaction name="Action_Horizon"/>
+    <addaction name="separator"/>
+    <addaction name="Action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menuUtilities">
+    <property name="title">
+     <string>Utilities</string>
+    </property>
+    <addaction name="Action_Export_to_Docx"/>
+    <addaction name="Action_Backup_Database"/>
+    <addaction name="Action_Delete"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="Action_About"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuUtilities"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="Action_Export_to_Docx">
+   <property name="text">
+    <string>Export to Docx</string>
+   </property>
+  </action>
+  <action name="Action_Backup_Database">
+   <property name="text">
+    <string>Backup Database</string>
+   </property>
+  </action>
+  <action name="Action_Delete">
+   <property name="text">
+    <string>Delete Site and Horizon</string>
+   </property>
+  </action>
+  <action name="Action_About">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="Action_Site">
+   <property name="text">
+    <string>Site</string>
+   </property>
+  </action>
+  <action name="Action_Horizon">
+   <property name="text">
+    <string>Horizon</string>
+   </property>
+  </action>
+  <action name="Action_Quit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
